@@ -3,7 +3,7 @@ def input_list():
     while True:
         
         list_new = input("Ввведіть через пробіл цілочисельні цифри: ")
-        list_new = list_new.split(" ")                # розбиваємо стрічку на елементи
+        list_new = list_new.split(" ")                # розбиває стрічку на елементи
         
         for i in range(0, len(list_new)):             # проходить через усі елементи від 0 до довжини списку
             try:                                      # перевіряє чи не має помилки у списку

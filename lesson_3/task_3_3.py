@@ -52,7 +52,7 @@ variable_2 = int(variable_2[1])
 print_label(second_status, variable_1, variable_2) # після
 
 
-print(" -- v5 Роблю бо так можна (міняю індекси змінним)")
+print(" -- v5 ")
 
 print_label(first_status, variable_1, variable_2) # до
 
