@@ -1,24 +1,15 @@
-def reverse(st):
-    lt = []
-    for i in range(0, len(st)):
-        if st[i] == " ":
-            lt.append(st[i])
-        else: 
-            k = i
-            while st[k] != " ":
-                lt.append(st[i:k])
-                k += 1
-    print(lt)
+number = input()
+number = number.split(" ")
 
-print(reverse("  rsadliesirqspeogwiqiyqw  gah doeotjdwpewwfto ssswqgrwoqtrjstffadkwpjpfdo aygjrgtyk"))
+number = list(map(int, number))
 
+min = number[0]
+max = number[0]
+for i in number:
+    if max <= i:
+        max = i
+    elif min >= i:
+        min = i
+print("Max = ", max)
+print("Min = ", min)
 
-'''    ch = st.split("  ")
-    print(ch)
-    for i in ch:
-        if i == "":
-            i = " "
-    ch.reverse()
-    st = "  ".join(ch)
-    return st
-'''
