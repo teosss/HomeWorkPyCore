@@ -1,15 +1,5 @@
-number = input()
-number = number.split(" ")
-
-number = list(map(int, number))
-
-min = number[0]
-max = number[0]
-for i in number:
-    if max <= i:
-        max = i
-    elif min >= i:
-        min = i
-print("Max = ", max)
-print("Min = ", min)
-
+birthdate = "1/1/2000"
+birthdate = birthdate.split('/')
+for i in range(len(birthdate)):
+    birthdate[i] = birthdate.split()
+print(birthdate)
