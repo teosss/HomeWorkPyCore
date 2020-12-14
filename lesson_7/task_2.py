@@ -1,3 +1,5 @@
+from math import pi
+
 def rectangle(*side):
     """
     This function calculates the square of rectangle
@@ -33,7 +35,7 @@ def circle(r):
     (float)
     """ 
     
-    return 2*3.14*r
+    return 2*pi*r
 
 parameter = input("Enter the number of which shape you want to find the perimeter: \n 1 if rectangle \n 2 if triangle \n 3 if circle \n Enter number: ")
 if parameter == "1":
