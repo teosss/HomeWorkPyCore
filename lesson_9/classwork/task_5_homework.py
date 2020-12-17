@@ -45,8 +45,9 @@ while not done:
     y = player_position[1]
  
     # Copy image to screen:
-#копіює картинку на екран
-    screen.blit(player_image, [x, y])
+#копіює картинку на екранz
+    screen.fill((0,0,1))
+    screen.blit(player_image, [x-70, y-70])
 #обновляємо екран
     pygame.display.flip()
     clock.tick(60)

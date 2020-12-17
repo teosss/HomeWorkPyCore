@@ -9,3 +9,8 @@ def count_positives_sum_negatives(arr):
         else:
             b += i
     return [count,b] if arr != [] else []
+
+
+# OR THIS
+def count_positives_sum_negatives(arr):
+    return [len(list((filter(lambda x: x > 0, arr)))), sum(list((filter(lambda x: x < 0, arr))))] if arr != [] else []
