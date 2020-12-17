@@ -49,7 +49,6 @@ while not done:
     screen.blit(player_image, [x, y])
 #обновляємо екран
     pygame.display.flip()
-    player_image.fill((0,0,1))
     clock.tick(60)
 
 
