@@ -15,13 +15,6 @@ def valid_age(age):
     except ValueError as e:
         print("Please enter correct age. ", e)
         return getage()
-    except NameError as e: 
-        print("NameError: ", e)
-        return getage()
-    except ZeroDivisionError as e:
-        print("Zero Division Error: ", e)
-        return getage()
-
 
 
 

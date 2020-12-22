@@ -8,10 +8,6 @@ def day_of_week(number):
            
     except ValueError as e:
         print("Please enter correct number. ", e)
-    except NameError as e: 
-        print("NameError: ", e)
-    except ZeroDivisionError as e:
-        print("Zero Division Error: ", e)
 
 
 day = day_of_week(input("Please, enter the number: "))
