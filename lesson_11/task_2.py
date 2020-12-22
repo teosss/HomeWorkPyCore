@@ -3,7 +3,7 @@ def day_of_week(number):
     try:
         number = int(number)
         if number > 7 or number <= 0:
-            raise ValueError()     
+            raise ValueError(0)     
         return weekDays[number-1]             
     except ValueError as e:
         print("Please enter correct number. ", e)
