@@ -6,7 +6,7 @@ def day_of_week(number):
             raise ValueError(0)     
         return weekDays[number-1]             
     except ValueError as e:
-        print("Please enter correct number. ", e)
+        print("Please enter correct number. ")
 
 day = day_of_week(input("Please, enter the number: "))
 print(day)
