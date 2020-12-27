@@ -290,6 +290,9 @@ def check_winner2_igrok_2():
 
 
 def add_to_all(event):
+    """
+    Функція певіряє, що нажав користувач і реагує на його дії відповідно до правил гри
+    """
     global points1, points2, move_player, next_step
     _type = 0  # ЛКМ
     if event.num == 3:
@@ -345,6 +348,9 @@ def add_to_all(event):
     
 
 def generate_ships_list(): # функція генерує кораблів
+    """
+    Функція генерує список які кораблі використовувати
+    """
     global ships_list
     ships_list = []
     for i in range(0, ships):
@@ -352,6 +358,9 @@ def generate_ships_list(): # функція генерує кораблів
 
 
 def generate_enemy_ships(): 
+    """
+    Функція генерує кількість і розмішення кораблів
+    """
     global ships_list, ship_total, player_1_boom, player_2_boom
     enemy_ships = []
 
